@@ -1,0 +1,6 @@
+@include font-face("titilium", "fonts/TitilliumWebRegular", $file-formats: eot woff2 woff);
+
+
+* {
+  @include transition(all .5s ease-out);
+}

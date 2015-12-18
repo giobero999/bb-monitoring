@@ -1,0 +1,116 @@
+body {
+  font-family: 'titilium';
+}
+
+.container {
+  background: #fff;
+
+}
+
+header {
+  background: $red;
+  width: 100%;
+  height: 50px;
+  border-radius: 0px;
+}
+
+.google-map {
+  width: 100%;
+  background: #000;
+  height: 500px;
+
+  #map {
+    width: auto;
+    height: 500px;
+  }
+}
+
+//header, map end
+
+.content {
+  outline: 0px solid #e0e0e0;
+  margin-top: 10px;
+  background: #fff;
+  max-width: 100%;
+
+  .billboard {
+    padding: 3px;
+    margin-bottom: 60px;
+    &:hover {
+
+    }
+    .box {
+      position: relative;
+      padding-right: 0px;
+
+
+
+      .bb-img {
+        position: relative;
+        height: 200px;
+
+        &:hover{
+          opacity: 1;
+        }
+      }
+
+      .edit-btn{
+        opacity: 0;
+        @include position(absolute, 0 2px null null);
+        border-radius: 0;
+      }
+      .default-img {
+        margin-top: 10px;
+      }
+      img {
+
+      }
+    }
+
+    .info {
+
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+
+          margin: 0;
+          border-bottom: 0px dashed #ccc;
+          list-style: none;
+
+          &:last-child {
+            border: none
+          }
+
+          span {
+            position: absolute;
+          }
+
+          p {
+            vertical-align: top;
+            text-align: right;
+            margin: 3px 0 0;
+            padding: 0 0 5px 0;
+            border-bottom: 1px dashed #ccc;
+            button {
+
+            }
+          }
+
+          .dash {
+
+          }
+        }
+      }
+    }
+
+  }
+
+}
+
+//content
+
+
+
+
+
