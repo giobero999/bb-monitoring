@@ -53,7 +53,7 @@ gulp.task('styles', function () {
 });
 
 gulp.task('scripts', function() {
-  return gulp.src(['./src/js/functions.js'])
+  return gulp.src(['./src/js/*.*'])
     .pipe(plumber())
     .pipe(uglify())
     .pipe(gulp.dest('./build/js/'))
@@ -69,7 +69,7 @@ gulp.task('rev', function() {
 
 gulp.task('watch', function() {
   gulp.watch('./src/sass/**/*.*', ['styles']);
-  gulp.watch(['./src/js/functions.js'], ['scripts']);
+  gulp.watch(['./src/js/*.*'], ['scripts']);
   gulp.watch("./build/*.html").on('change', browserSync.reload);
 });
 

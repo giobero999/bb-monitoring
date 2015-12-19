@@ -45,14 +45,37 @@ header {
 
 
 
+      .slider-img{
+        background: url("../img/11.jpg");
+        background-size:cover;
+        height: 200px;
+      }
+
+      .slider-arrow{
+        position: absolute;
+        left:10px;
+        color: $black;
+        top:50%;
+        margin-top:-10px;
+      }
+        .bb-img {
+          position: relative;
+          height: 200px;
+          background: #000;
+          &:hover{
+            opacity: 1;
+          }
+      }
       .bb-img {
         position: relative;
         height: 200px;
-
+        background: #000;
         &:hover{
           opacity: 1;
         }
       }
+
+
 
       .edit-btn{
         opacity: 0;
@@ -107,8 +130,78 @@ header {
   }
 
 }
-
 //content
+
+
+//create modal
+
+
+
+  #bb-create {
+    @media screen and (min-width: 768px) {
+      .modal-dialog  {width:900px;}
+    }
+    .modal-header {
+      text-align: center;
+    }
+
+    .modal-content {
+      border-radius: 0;
+
+      .form-group {
+        border-radius: 0;
+        border: 0px solid #ccc;
+      }
+
+       select, textarea{
+        border-radius: 0;
+        border: 0px solid #ccc;
+      }
+
+      #id, #location {
+        border: 2px solid #ccc;
+      }
+
+      #id, #location, #sides, #size, #description {
+        border-radius: 0;
+        border: 2px solid #ccc;
+      }
+
+
+
+    }
+
+    .modal-footer {
+      border: 0;
+
+
+      .save-btn {
+        border-radius: 0;
+        background: lighten($black, 20%);
+        color:$white;
+        border:1px solid $black;
+        padding:5px 30px;
+        cursor: pointer;
+
+
+      }
+      .cancel-btn {
+        border-radius: 0;
+        border:1px solid $black;
+        background: lighten($black, 100%);;
+        @include box-sizing(border-box);
+        color:$black;
+        padding:5px 30px;
+        cursor: pointer;
+
+      }
+    }
+
+
+
+  }
+
+
 
 
 
