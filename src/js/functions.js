@@ -13,14 +13,17 @@ $(document).ready(function(){
         $("#bb-create").modal();
     });
 
-    //dropzone
-    $("myDropzone").dropzone({ url: "/file/post" });
-
 
     //on/off swithcer
     $('#toggle-one').change(function() {
         console.log("off");
     });
+
+
+
+
+
+
 
 
 
