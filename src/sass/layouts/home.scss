@@ -135,6 +135,12 @@ header {
       border:2px solid darken($gray, 20%);
     }
 
+    #bb-type {
+      border-radius: 0;
+      border:2px solid darken($gray, 20%);
+    }
+
+
     .add-button {
       background: $white;
       color: $black;
