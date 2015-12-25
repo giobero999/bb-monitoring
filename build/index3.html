@@ -443,44 +443,45 @@
 <!--<script src="js/dropzone.js"></script>-->
 <script src="js/functions.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js"></script>
-<script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/tags/markerwithlabel/1.1.5/src/markerwithlabel_packed.js"></script>
-
 
 <script type="text/javascript">
-    $(document).ready(function(){
-        var number   = 1;
-        var markerPoint = new google.maps.Point(12, 23)
-          var mapOptions = {
-              center: new google.maps.LatLng(41.711879781934556, 44.791259765625),
-              zoom: 13,
-              mapTypeId: google.maps.MapTypeId.ROADMAP
-          };
-          var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-          //Attach click event handler to the map.
-          google.maps.event.addListener(map, 'click', function (e) {
-              //Determine the location where the user has clicked.
-              var location = e.latLng;
-              //Create a marker and placed it on the map.
-              var marker = new MarkerWithLabel({
-                     position: location,
-                     draggable: true,
-                     raiseOnDrag: false,
-                     map: map,
-                     icon:"img/marker-green.png",
-                     labelContent: number++,
-                     labelAnchor: markerPoint,
-                     labelClass: "labels" // the CSS class for the label
-                   });
-              //Attach click event handler to the marker.
-              google.maps.event.addListener(marker, "click", function (e) {
-                  var infoWindow = new google.maps.InfoWindow({
-                      content: 'Latitude: ' + location.lat() + '<br />Longitude: ' + location.lng()
-                  });
-                  
-                  $("#bb-create").modal();
-              });
-          });
-      });
+    window.onload = function () {
+        var mapOptions = {
+            center: new google.maps.LatLng(41.711879781934556, 44.791259765625),
+            zoom: 13,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+        //Attach click event handler to the map.
+        google.maps.event.addListener(map, 'click', function (e) {
+
+            //Determine the location where the user has clicked.
+            var location = e.latLng;
+
+            //Create a marker and placed it on the map.
+            var marker = new google.maps.Marker({
+                position: location,
+                draggable: true,
+                icon: 'img/06.png',
+                map: map
+            });
+
+            //Attach click event handler to the marker.
+            google.maps.event.addListener(marker, "click", function (e) {
+                var infoWindow = new google.maps.InfoWindow({
+                    content: 'Latitude: ' + location.lat() + '<br />Longitude: ' + location.lng()
+                });
+
+                $("#bb-create").modal();
+
+            });
+
+
+        });
+
+
+    };
 </script>
 
 

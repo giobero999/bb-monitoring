@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     $(".box").hover(function() {
         $(this).find('.edit-btn').css({"opacity": 1});
-        console.log("hover")
+        
     }, function(){
         $(this).find('.edit-btn').css({"opacity": 0});
     });

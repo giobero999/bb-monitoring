@@ -24,7 +24,22 @@ header {
     width: 100%;
     height: 500px;
   }
+
 }
+
+
+  .labels {
+    color: $black;
+    display: block;
+    overflow: hidden;
+    font-family: "Lucida Grande", "Arial", sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+    text-align: center;
+    width: 23px;
+    border: 0px solid $red;
+
+  }
 
 //header, map end
 
@@ -206,10 +221,3 @@ header {
 
 
 }
-
-
-
-
-
-
-

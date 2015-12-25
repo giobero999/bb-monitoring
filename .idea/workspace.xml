@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="38e4411e-36c8-4ad5-a1e0-a4fd9eb82c85" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/css/dropzone.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/js/dropzone.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/css/main.css" afterPath="$PROJECT_DIR$/build/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/index.html" afterPath="$PROJECT_DIR$/build/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/layouts/home.scss" afterPath="$PROJECT_DIR$/src/sass/layouts/home.scss" />
-    </list>
+    <list default="true" id="38e4411e-36c8-4ad5-a1e0-a4fd9eb82c85" name="Default" comment="" />
     <ignored path="bb-monitoring.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -100,8 +93,8 @@
     </gulpfiles>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="25" />
-    <option name="y" value="47" />
+    <option name="x" value="272" />
+    <option name="y" value="65" />
     <option name="width" value="1528" />
     <option name="height" value="1293" />
   </component>
@@ -254,7 +247,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="25" y="47" width="1528" height="1293" extended-state="0" />
+    <frame x="272" y="65" width="1528" height="1293" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
